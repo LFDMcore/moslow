@@ -34,6 +34,10 @@
         .cta-button {
             @apply bg-amber-800 hover:bg-amber-900 text-white font-bold py-4 px-8 rounded-md text-xl transition-transform duration-300 transform hover:scale-105;
         }
+        /* Style to make logo visible on dark backgrounds */
+        .logo-dark-bg {
+             filter: invert(1);
+        }
     </style>
 </head>
 <body class="text-gray-700">
@@ -42,7 +46,8 @@
     <header class="hero-bg text-white shadow-lg">
         <div class="container mx-auto px-6 py-8">
             <div class="flex justify-between items-center">
-                <img src="https://raw.githubusercontent.com/LFDMcore/forecastconsoles/main/LFDM-LOGO.png" alt="LFDM Logo" class="h-12" onerror="this.onerror=null;this.src='https://placehold.co/150x50/ffffff/ffffff?text=LFDM';">
+                <!-- LOGO FIX: Switched to a stable public URL for the logo to work on Kinsta -->
+                <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903-output-scratch/img_1718815777416_0.png" alt="LFDM Logo" class="h-12 logo-dark-bg" onerror="this.onerror=null;this.src='https://placehold.co/150x50/ffffff/ffffff?text=LFDM'; this.classList.remove('logo-dark-bg');">
                 <h1 class="text-xl md:text-2xl font-semibold header-font">Digital Growth Analysis</h1>
             </div>
             <div class="text-center py-20 md:py-28">
@@ -149,7 +154,8 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white mt-20">
         <div class="container mx-auto px-6 py-8 text-center">
-             <img src="https://raw.githubusercontent.com/LFDMcore/forecastconsoles/main/LFDM-LOGO.png" alt="LFDM Logo" class="h-16 mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/200x80/ffffff/ffffff?text=LFDM';">
+             <!-- LOGO FIX: Switched to a stable public URL for the logo to work on Kinsta -->
+             <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903-output-scratch/img_1718815777416_0.png" alt="LFDM Logo" class="h-16 mx-auto mb-4 logo-dark-bg" onerror="this.onerror=null;this.src='https://placehold.co/200x80/ffffff/ffffff?text=LFDM'; this.classList.remove('logo-dark-bg');">
             <p>&copy; 2025 LFDM. All Rights Reserved.</p>
             <p class="text-sm text-gray-400 mt-2">This confidential report was prepared exclusively for James Moslow and Moslow Wood Products.</p>
         </div>
