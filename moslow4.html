@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building on a Legacy | A Digital Opportunity for Moslow Wood Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f5f2; /* A warm, paper-like background */
+        }
+        .header-font {
+            font-family: 'Merriweather', serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(45, 35, 25, 0.8), rgba(45, 35, 25, 0.8)), url('https://placehold.co/1200x800/654321/FFFFFF?text=Craftsmanship') no-repeat center center;
+            background-size: cover;
+        }
+        .section-title {
+            @apply text-4xl md:text-5xl font-bold text-gray-800 mb-4 header-font;
+        }
+        .section-subtitle {
+            @apply text-lg text-gray-600 max-w-3xl mx-auto;
+        }
+        .card {
+            @apply bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300;
+        }
+        .stat-card {
+            @apply bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center;
+        }
+        .cta-button {
+            @apply bg-amber-800 hover:bg-amber-900 text-white font-bold py-4 px-8 rounded-md text-xl transition-transform duration-300 transform hover:scale-105;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header & Hero Section -->
+    <header class="hero-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex justify-between items-center">
+                <img src="https://raw.githubusercontent.com/LFDMcore/forecastconsoles/main/LFDM-LOGO.png" alt="LFDM Logo" class="h-12" onerror="this.onerror=null;this.src='https://placehold.co/150x50/ffffff/ffffff?text=LFDM';">
+                <h1 class="text-xl md:text-2xl font-semibold header-font">Digital Growth Analysis</h1>
+            </div>
+            <div class="text-center py-20 md:py-28">
+                <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-4 header-font">James, your family has built something incredible.</h2>
+                <p class="text-xl md:text-2xl opacity-95 max-w-4xl mx-auto font-light">I've spent some time with the Moslow Wood Products story, and it's clear you're not just making wood products—you're continuing a century-old legacy of American craftsmanship. I see that same potential for enduring success in your digital presence.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+
+        <!-- Introduction Section -->
+        <section class="text-center mb-20">
+            <h3 class="section-title">A Look Under the Hood</h3>
+            <p class="section-subtitle mb-8">
+                My name's Cody, and I'm with LFDM. I don't believe in generic pitches. I believe in honest, data-driven conversations. I've analyzed your online footprint to identify what's working and, more importantly, where the real opportunities for growth are. This is about building on your success for the next generation.
+            </p>
+        </section>
+
+        <!-- BI Report Section -->
+        <section id="report" class="mb-20">
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="stat-card">
+                    <h4 class="text-gray-500 font-semibold mb-2">Organic Traffic</h4>
+                    <p class="text-5xl font-extrabold text-green-700">369<span class="text-2xl">/mo</span></p>
+                    <p class="text-gray-500 mt-2">A steady stream of visitors finding you online.</p>
+                </div>
+                <div class="stat-card">
+                    <h4 class="text-gray-500 font-semibold mb-2">Backlinks</h4>
+                    <p class="text-5xl font-extrabold text-blue-700">2,000</p>
+                     <p class="text-gray-500 mt-2">A strong signal of trust from 736 other websites.</p>
+                </div>
+                 <div class="stat-card">
+                    <h4 class="text-gray-500 font-semibold mb-2">Keywords Ranked</h4>
+                    <p class="text-5xl font-extrabold text-indigo-700">2,100</p>
+                    <p class="text-gray-500 mt-2">The number of search terms your site is visible for.</p>
+                </div>
+                <div class="stat-card">
+                    <h4 class="text-gray-500 font-semibold mb-2">Branded Traffic</h4>
+                    <p class="text-5xl font-extrabold text-amber-800">83.1%</p>
+                    <p class="text-gray-500 mt-2">Your name recognition is incredibly strong. That's a powerful asset.</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                <!-- Keywords by Intent -->
+                <div class="card lg:col-span-3">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 header-font">Your Digital Competitive Landscape</h3>
+                     <p class="text-gray-600 mb-6">This map shows where you stand against your main organic competitors. With 2,100 keywords, you have a powerful foundation of authority. The chart reveals different types of competitors: some (like the pink bubble) get high traffic from fewer keywords, while others (purple) have a large keyword footprint like you. This isn't just a map of the competition; it's a map of strategic opportunities for you to dominate.</p>
+                    <div class="p-4 bg-gray-50 rounded-md">
+                         <canvas id="competitorChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Branded vs Non-Branded -->
+                <div class="card lg:col-span-2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 header-font">Brand vs. Discovery</h3>
+                     <p class="text-gray-600 mb-6">This is a fantastic sign. 83% of your traffic comes from people who already know your name. It proves the power of your reputation. The flip side is the massive opportunity in that other 17%—customers who need exactly what you make, but don't know the Moslow name... yet.</p>
+                     <div class="p-4 bg-gray-50 rounded-md">
+                        <canvas id="brandedChart"></canvas>
+                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- The Opportunity Section -->
+        <section class="text-center mb-20">
+             <h3 class="section-title">The Path to Digital Dominance</h3>
+             <p class="section-subtitle mb-8">
+                Your foundation is rock-solid. Here's how we can build on it to not just compete, but lead the digital conversation in your industry.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div class="card border-t-4 border-green-700">
+                    <h4 class="text-xl font-bold mb-2 header-font">Become the #1 Resource</h4>
+                    <p class="text-gray-600">Distributors are looking for partners, not just parts. By creating content that helps them—articles on woodworking trends, guides to choosing the right wood for a project, videos of your process—you become more than a supplier. You become an indispensable resource.</p>
+                </div>
+                <div class="card border-t-4 border-blue-700">
+                    <h4 class="text-xl font-bold mb-2 header-font">Modernize the Digital Handshake</h4>
+                    <p class="text-gray-600">Your craftsmanship is premium. Your website should be too. A modernized design with stunning product photography and a seamless user experience will ensure a potential partner's first impression online is as powerful as seeing your products in person.</p>
+                </div>
+                <div class="card border-t-4 border-amber-800">
+                    <h4 class="text-xl font-bold mb-2 header-font">Create an Unbeatable Partner Portal</h4>
+                    <p class="text-gray-600">Make working with Moslow the easiest and best decision a distributor can make. A private portal with real-time inventory, easy ordering, and a library of marketing materials would create powerful loyalty and streamline your entire sales process.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-white rounded-lg shadow-xl py-16 px-8 text-center">
+            <h3 class="section-title">Let's Build the Future, Together.</h3>
+            <p class="section-subtitle mb-8">
+                James, I genuinely believe there's a clear, data-driven path to elevate your brand online, attract high-value partners, and build an even stronger foundation for the next 100 years.
+            </p>
+            <p class="section-subtitle mb-12">
+               I'd be honored to have a real, no-pressure conversation with you about your goals and how we can help you achieve them.
+            </p>
+            <a href="https://meeting.calendarhero.com/cody" target="_blank" class="cta-button">
+                Let's Find 15 Minutes to Chat
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-8 text-center">
+             <img src="https://raw.githubusercontent.com/LFDMcore/forecastconsoles/main/LFDM-LOGO.png" alt="LFDM Logo" class="h-16 mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/200x80/ffffff/ffffff?text=LFDM';">
+            <p>&copy; 2025 LFDM. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">This confidential report was prepared exclusively for James Moslow and Moslow Wood Products.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Chart for Competitive Positioning Map
+        const competitorCtx = document.getElementById('competitorChart').getContext('2d');
+        new Chart(competitorCtx, {
+            type: 'bubble',
+            data: {
+                datasets: [
+                    {
+                        label: 'Moslow Wood Products',
+                        data: [{ x: 2100, y: 369, r: 30 }],
+                        backgroundColor: 'rgba(124, 58, 237, 0.7)', // Indigo
+                        borderColor: 'rgba(124, 58, 237, 1)',
+                    },
+                    {
+                        label: 'Competitor A (High Traffic)',
+                        data: [{ x: 100, y: 1300, r: 25 }],
+                        backgroundColor: 'rgba(219, 39, 119, 0.6)', // Pink
+                    },
+                    {
+                        label: 'Competitor B (High Keywords)',
+                        data: [{ x: 1200, y: 300, r: 20 }],
+                        backgroundColor: 'rgba(168, 85, 247, 0.6)', // Purple
+                    },
+                    {
+                        label: 'Competitor C',
+                        data: [{ x: 400, y: 424, r: 18 }],
+                        backgroundColor: 'rgba(249, 115, 22, 0.6)', // Orange
+                    },
+                    {
+                        label: 'Competitor D',
+                        data: [{ x: 450, y: 200, r: 15 }],
+                        backgroundColor: 'rgba(59, 130, 246, 0.6)', // Blue
+                    },
+                     {
+                        label: 'Competitor E',
+                        data: [{ x: 200, y: 150, r: 10 }],
+                        backgroundColor: 'rgba(22, 163, 74, 0.6)', // Green
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                         callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                label += `(~${context.raw.x.toLocaleString()} keywords, ~${context.raw.y.toLocaleString()} traffic)`;
+                                return label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Monthly Organic Search Traffic'
+                        }
+                    },
+                    x: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Organic Keywords'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart for Branded vs Non-Branded
+        const brandedCtx = document.getElementById('brandedChart').getContext('2d');
+        new Chart(brandedCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Branded (83.1%)', 'Non-Branded (16.9%)'],
+                datasets: [{
+                    label: 'Traffic Source',
+                    data: [83.1, 16.9],
+                    backgroundColor: [
+                        'rgba(146, 64, 14, 0.8)', // dark-amber
+                        'rgba(217, 119, 6, 0.8)', // amber
+                    ],
+                    borderColor: [
+                        'rgba(146, 64, 14, 1)',
+                        'rgba(217, 119, 6, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+             options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
